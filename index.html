@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="STAR-ECHO (Server That Are Running-Echo) - What is running? | Test">
+  <meta name="keywords" content="localhost,server,running,detection,sabnzbd,router,fritzbox,nzbget,xampp">
+
+  <title>STAR-ECHO (Server That Are Running-Echo) - What is running? | Test</title>
+
+</head>
+
+<body>
+  <div id="result"></div>
+  <!-- demo tests - non-exhaustive -->
+  <img id="test-router" src="http://192.168.178.1/favicon.ico" onerror="this.style.display='none'"/>
+  <img id="test-fritz-example" src="http://192.168.178.1/css/default/images/kopfbalken_links.png" onerror="this.style.display='none'"/>
+  <img id="test-xampp-example" src="http://localhost/dashboard/images/favicon.png" onerror="this.style.display='none'"/>
+  <img id="test-sabnzbd-port-8080" src="http://127.0.0.1:8080/sabnzbd/staticcfg/ico/favicon.ico" onerror="this.style.display='none'" />
+  <img id="test-sabnzbd-port-8082" src="http://127.0.0.1:8082/sabnzbd/staticcfg/ico/favicon.ico" onerror="this.style.display='none'" />
+  <img id="test-nzbget" src="http://127.0.0.1:6789/img/favicon.ico" onerror="this.style.display='none'" />
+
+
+  <!-- Other software with built-in web-interface -->
+
+
+
+</body>
+
+<script>
+  document.onreadystatechange = () => {
+    if (document.readyState === 'complete') {
+      var result = "";
+      if (document.getElementById("test-router").width) {
+        result += "Your router is available via 192.168.178.1<br>";
+      }
+      if (document.getElementById("test-fritz-example").width) {
+        result += "Your router is : FRITZ!Box<br>";
+      }
+      if (document.getElementById("test-xampp-example").width) {
+        result += "Your are running XAMPP with default configuration<br>";
+      }
+      if (document.getElementById("test-sabnzbd-port-8080").width) {
+        result += "SABnzbd is running on port 8080.<br>";
+      }
+      if (document.getElementById("test-sabnzbd-port-8082").width) {
+        result += "SABnzbd is running on port 8082.<br>";
+      }
+      if (document.getElementById("test-nzbget").width) {
+        result += "NZBGet is running on port 6789.<br>"; // width 16, 48, ..
+      }
+      if (!result) {
+        result = "Nothing detected.";
+      }
+      document.getElementById("result").innerHTML = result;
+    }
+
+  }
+</script>
+
+</html>
