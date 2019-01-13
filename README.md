@@ -25,3 +25,9 @@ Thus, it is possible to ascertain if specific software is used by the client. Lo
   Emby is running on port 8096
   
   Subsonic is running on port 4040
+
+## How to block local requests?
+
+  block local resource requests by system firewall
+  
+  configure a proxy (e.g. SOCKS v5) on your system mapped to e.g. 127.0.0.1:1080
