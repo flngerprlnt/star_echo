@@ -10,7 +10,27 @@ Thus, it is possible to ascertain if specific software is used by the client. Lo
   
   Your router is : FRITZ!Box
   
+  Your FRITZ!Box has NAS support
+  
+  Your FRITZ!Box has NAS support on FRITZ!OS 06.30* < FRITZ!OS 07.01
+  
+  Your FRITZ!Box has MESH support (FRITZ!OS > 07.01)
+  
+  You have FRITZ!Box 7490 with MESH supported
+  
+  You have FRITZ!Box 7360
+  
+  You have FRITZ!Box 7272
+  
+  You have FRITZ!Box 7170
+  
+  You have FRITZ!Box Fon WLAN
+  
   Your are running XAMPP with default configuration
+  
+  Your are running a server on localhost
+  
+  Your are running a server and VirtualBox Host-Only Network is enabled
   
   SABnzbd is running on port 8080
   
@@ -25,6 +45,8 @@ Thus, it is possible to ascertain if specific software is used by the client. Lo
   Emby is running on port 8096
   
   Subsonic is running on port 4040
+  
+  Openfire (XMPP) is running on port 9090
 
 ## How to block local requests?
 
